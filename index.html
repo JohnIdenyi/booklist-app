@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 class="heading">
+                <i class="fa-solid fa-book"></i> 
+                My<span class="book">Book</span>List
+            </h1>
+            <form action="#" id="book-form">
+                <div class="input-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="input-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="input-group">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text" id="isbn">
+                </div>
+                <input type="submit" id="submit" value="Add Book">
+            </form>
+
+            <!-- Table for displaying data -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
